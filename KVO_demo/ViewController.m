@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // https://draveness.me/kvocontroller
     Fizz *fizz = [[Fizz alloc] init];
     [fizz addObserver:self forKeyPath:@"number" options:NSKeyValueObservingOptionNew |NSKeyValueObservingOptionOld  context:nil];
     fizz.number = @1;
